@@ -22,7 +22,12 @@
           <v-parallax src="assets/test1.jpg" height="500">
             <v-layout column align-center justify-center class="white--text">
               <!-- Main Logo -->
-              <v-img src="assets/Logo anoo mit Untertitel 300dpi kompakt.png" alt="anoo logo" contain />
+              <v-img
+                src="assets/Logo anoo mit Untertitel 300dpi kompakt.png"
+                alt="anoo logo"
+                max-width="600px"
+                contain
+              />
 
               <h1 class="white--text mb-2 display-1 text-center" />
             </v-layout>
@@ -232,14 +237,54 @@
   <script>
     new Vue({
       el: '#app',
-      vuetify: new Vuetify(),
-      data() {
-        return {
-          title: ' '
-
-        }
-      }
+      vuetify: new Vuetify()
     })
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "url": "https://anoo.ch",
+      "logo": "https://anoo.ch/assets/logo.png",
+      "image": "https://anoo.ch/assets/Logo%20anoo%20mit%20Untertitel%20300dpi%20kompakt.png",
+      "name": "anoo - Advokatur & Notariat KLG",
+      "legalName": "anoo - Advokatur & Notariat KLG",
+      "email": "mailto:mail@anoo.ch",
+      "telephone": "+41318591010",
+      "currenciesAccepted": "CHF",
+      "paymentAccepted": "Cash, Credit Card, Visa, V Pay, Mastercard, Maestro, American Express, Apple Pay, Google Pay, Diners, Discover, Union Pay",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+           "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ]
+        }
+      ],
+      "knowsLanguage": [
+        "German",
+        "French"
+      ],
+      "areaServed": "CH",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Zentrumsplatz 5",
+        "addressLocality": "Urtenen-Sch&ouml;nb&uuml;hl",
+        "addressRegion": "BE",
+        "postalCode": "3322",
+        "addressCountry": "CH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "47.020456",
+        "longitude": "7.498412"
+      }
+    }
   </script>
 </body>
 
