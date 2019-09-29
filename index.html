@@ -24,37 +24,60 @@
             justify-center
             class="white--text"
           >
-            <v-img src="assets/Logo anoo mit Untertitel 300dpi kompakt.png" alt="Vuetify.js" height="250">
-            <h1 class="white--text mb-2 display-1 text-center"></h1>
-            <div class="subheading mb-4 text-center"></div>
-            <v-btn
-              class="mt-12"
-              color="rgba(72, 132, 161, 255)"
-              dark
-              large
-              href="mailto:mail@anoo.ch"
-            >
-              Kontakt
-            </v-btn>
+            <!-- Main Logo -->
+            <v-img
+              src="assets/Logo anoo mit Untertitel 300dpi kompakt.png"
+              alt="anoo logo"
+              contain
+            />
+
+            <h1 class="white--text mb-2 display-1 text-center" />
           </v-layout>
         </v-parallax>
       </section>
 
       <section>
         <v-layout
+        column
+        wrap
+        align-center
+        justify-center
+        class="mb-5"
+        >
+          <!-- Contact Button -->
+          <v-flex
+              xs12
+              sm4
+          >
+            <v-btn
+            class="my-3"
+            color="rgba(72, 132, 161, 255)"
+            dark
+            large
+            href="mailto:mail@anoo.ch"
+            >
+            Kontakt
+            </v-btn>
+          </v-flex>
+        </v-layout>
+
+        <v-layout
           column
           wrap
           class="my-5"
           align-center
         >
+          <!-- Appointment -->
           <v-flex xs12 sm4 class="my-4">
             <div class="text-center">
-            	              <h2 class="headline"> Terminvereinbarung</h2>
+            	<h2 class="headline"> Terminvereinbarung</h2>
             </div>
           </v-flex>
+
           <v-flex xs12>
             <v-container grid-list-xl>
               <v-layout row wrap align-center>
+
                 <v-flex xs12 md4>
                   <v-card flat class="transparent">
                     <v-card-text class="text-center">
@@ -68,6 +91,7 @@
                     </v-card-text>
                   </v-card>
                 </v-flex>
+
                 <v-flex xs12 md4>
                   <v-card flat class="transparent">
                     <v-card-text class="text-center">
