@@ -18,13 +18,15 @@
         <section>
           <v-parallax src="assets/test1.jpg" height="500">
             <v-row
-              no-gutters
               align="center"
               justify="center"
             >
               <v-col
                 cols="12"
-                sm="4"
+                sm="8"
+                md="6"
+                lg="4"
+                xl="3"
               >
                 <!-- Main Logo -->
                 <v-img
@@ -55,7 +57,10 @@
         </section>
 
         <section>
-          <v-layout column wrap class="my-5" align-center>
+          <v-row
+            class="my-5"
+            align="center"
+          >
             <!-- Appointment -->
             <v-flex xs12 sm4 class="my-4">
               <div class="text-center">
@@ -65,8 +70,7 @@
 
             <v-flex xs12>
               <v-container grid-list-xl>
-                <v-layout row wrap align-center>
-
+                <v-row align="center">
                   <v-flex xs12 md4>
                     <v-card flat class="transparent">
 
@@ -117,25 +121,32 @@
                       </v-card-text>
                     </v-card>
                   </v-flex>
-                </v-layout>
+                </v-row>
               </v-container>
             </v-flex>
-          </v-layout>
+          </v-row>
         </section>
 
         <section>
           <v-parallax src="assets/test1.jpg" height="180">
-            <v-layout column align-center justify-center class="white--text">
+            <v-row
+              align="center"
+              justify="center"
+              class="white--text"
+            >
               <img>
               <h1 class="white--text mb-2 display-1 text-center"></h1>
               <div class="subheading mb-4 text-center"></div>
-            </v-layout>
+            </v-row>
           </v-parallax>
         </section>
 
         <section>
           <v-container grid-list-xl>
-            <v-layout row wrap justify-center class="my-12">
+            <v-row
+              justify="center"
+              class="my-12"
+            >
               <v-flex xs12 sm4>
                 <v-card flat class="transparent">
                   <v-card-title primary-title class="layout justify-center">
@@ -225,12 +236,12 @@
                   </v-list>
                 </v-card>
               </v-flex>
-            </v-layout>
+            </v-row>
           </v-container>
         </section>
 
         <v-footer color="rgba(72, 132, 161, 255)">
-          <v-layout row wrap align-center>
+          <v-row align="center">
             <v-flex xs12>
               <div class="body-2 white--text text-center ml-1">
                 Impressum: anoo - Advokatur & Notariat KLG, Zentrumsplatz 5, Postfach, 3322 Urtenen-Schönbühl
@@ -238,7 +249,7 @@
                 <a class="white--text" href="Name: Denis Kellenberger (inhaltlich verantwortliche Person)" target="_blank">Inhaltlich verantwortliche Person</a> / <a class="white--text" href="mailto:impressum@anoo.ch">Mail</a>
               </div>
             </v-flex>
-          </v-layout>
+          </v-row>
         </v-footer>
       </v-content>
     </v-app>
