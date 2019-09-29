@@ -1,2 +1,2 @@
-# anoo.github.io
-Static web page
+# Anoo
+Static web page: https://oanstein.github.io/anoo/
